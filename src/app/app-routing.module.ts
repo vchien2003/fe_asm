@@ -6,9 +6,18 @@ import { DashboardPageComponent } from './pages/admin/dashboard-page/dashboard-p
 import { CategoriesPageComponent } from './pages/admin/categories-page/categories-page.component';
 import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
 import { CategoryUpdateComponent } from './pages/admin/category-update/category-update.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
 
 const routes: Routes = [
-  { path: '', component: BaseLayoutComponent },
+  {
+    path: '',
+    component: BaseLayoutComponent,
+    children: [
+      { path: 'signup', component: SignupComponent },
+      { path: 'signin', component: SigninComponent },
+    ],
+  },
   {
     path: 'admin',
     component: AdminLayoutComponent,

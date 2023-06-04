@@ -13,9 +13,11 @@ import { CategoryUpdateComponent } from './pages/admin/category-update/category-
 import { CategoryListComponent } from './components/admin/category-list/category-list.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, DashboardPageComponent, CategoriesPageComponent, CategoryAddComponent, CategoryUpdateComponent, CategoryListComponent, AdminLayoutComponent, BaseLayoutComponent],
+  declarations: [AppComponent, PageNotFoundComponent, DashboardPageComponent, CategoriesPageComponent, CategoryAddComponent, CategoryUpdateComponent, CategoryListComponent, AdminLayoutComponent, BaseLayoutComponent, SignupComponent, SigninComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
