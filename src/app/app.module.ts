@@ -15,9 +15,13 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
+import { ProductListComponent } from './components/admin/product-list/product-list.component';
+import { ProductsPageComponent } from './pages/admin/products-page/products-page.component';
+import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
+import { ProductUpdateComponent } from './pages/admin/product-update/product-update.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, DashboardPageComponent, CategoriesPageComponent, CategoryAddComponent, CategoryUpdateComponent, CategoryListComponent, AdminLayoutComponent, BaseLayoutComponent, SignupComponent, SigninComponent],
+  declarations: [AppComponent, PageNotFoundComponent, DashboardPageComponent, CategoriesPageComponent, CategoryAddComponent, CategoryUpdateComponent, CategoryListComponent, AdminLayoutComponent, BaseLayoutComponent, SignupComponent, SigninComponent, ProductListComponent, ProductsPageComponent, ProductAddComponent, ProductUpdateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
